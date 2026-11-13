@@ -1,0 +1,8 @@
+[
+  {
+    "label": "PHP Server + recarga + abrir archivo",
+    "command": "trap 'kill 0' EXIT; php -S localhost:8000 & npx browser-sync start --proxy localhost:8000 --startPath \"$ZED_RELATIVE_FILE\" --files '**/*.php, **/*.css, **/*.js'",
+    "use_new_terminal": false,
+    "reveal": "always"
+  }
+]

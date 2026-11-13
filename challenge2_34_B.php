@@ -15,7 +15,7 @@
     <?php if (isset($_POST["inputNumber"])) {
       $userNumber = $_POST["inputNumber"];
       $prime = true;
-      for ($i = 2; $i < $userNumber; $i++) {
+      for ($i = 2; $i < $userNumber / 2 + 1; $i++) {
         if ($userNumber % $i == 0) {
           echo "$userNumber is not a prime number";
           $prime = false;
